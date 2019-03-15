@@ -35,3 +35,16 @@ rules:{
 test:xxxx,
 loader: 'babel-loader
 }
+
+## 快频彩种 彩票的一种 10 分钟一期
+
+功能模块：（选好投注）
+倒计时 玩法切换 计算金额
+添加号码 投注支付 随机号码
+奖金预测 状态更新 动态遗漏
+
+涵盖 ES6 知识点
+let 和 const 解构赋值 正则扩展 数值扩展
+数组扩展 函数扩展 对象扩展 字符串扩展
+Symbol 数据结构 Proxy Reflect
+类 Promise Generator 模块化
