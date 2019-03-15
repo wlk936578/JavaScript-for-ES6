@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
 import gutil from 'gulp-util';
@@ -9,3 +10,16 @@ gulp.task('browser',(cb)=>{
   gulp.watch('app/**/*.ejs',['pages']);
   gulp.watch('app/**/*.css',['css']);
 });
+=======
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import gutil from 'gulp-util'
+import args from './util/args'
+
+gulp.task('browser', cb => {
+  if (!args.watch) return cb
+  gulp.watch('app/**/*.js', ['scripts'])
+  gulp.watch('app/**/*.ejs', ['pages'])
+  gulp.watch('app/**/*.css', ['css'])
+})
+>>>>>>> 81bc43c745f2cfe50f67c2303779bc5a3bc7b537

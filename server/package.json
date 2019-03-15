@@ -12,5 +12,11 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0"
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1"
+>>>>>>> 81bc43c745f2cfe50f67c2303779bc5a3bc7b537
   }
 }
