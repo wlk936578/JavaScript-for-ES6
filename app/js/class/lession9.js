@@ -29,7 +29,7 @@
   for (let [key, value] of Object.entries(obj)) {
     console.log('let of', key, value) // Symbol定义的 key/value 拿不到
   }
-  // Object.getOwnPropertySymbols 可以取到Symbol定义的key值
+  // Object.getOwnPropertySymbols 可以取到 Symbol 定义的key值
   Object.getOwnPropertySymbols(obj).forEach((item, index) => {
     // 该方法会返回一个数组储存key值
     console.log('getOwnPropertySymbols', obj[item])
