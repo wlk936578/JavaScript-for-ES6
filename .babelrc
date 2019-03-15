@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "presets":["es2015"],
-  "plugins":["transform-decorators-legacy"]
-=======
   "presets": ["es2015"],
   "plugins": ["transform-decorators-legacy"]
->>>>>>> 81bc43c745f2cfe50f67c2303779bc5a3bc7b537
 }

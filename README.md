@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#cp-lessons
-=======
 ## express -e . 输入后提示 command not found: express
 
 先安装 全局安装 express 和 express-generator
@@ -51,4 +48,3 @@ let 和 const 解构赋值 正则扩展 数值扩展
 数组扩展 函数扩展 对象扩展 字符串扩展
 Symbol 数据结构 Proxy Reflect
 类 Promise Generator 模块化
->>>>>>> 81bc43c745f2cfe50f67c2303779bc5a3bc7b537
