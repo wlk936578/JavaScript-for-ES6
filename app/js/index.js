@@ -3,4 +3,5 @@
  *
  */
 import 'babel-polyfill'
-import lottery from './lottery'
+import './class/lession17'
+// import lottery from './lottery'
