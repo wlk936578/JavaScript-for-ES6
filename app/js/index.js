@@ -3,5 +3,5 @@
  *
  */
 import 'babel-polyfill';
-import '../js/class/lession_es6/lession20';
+import '../js/class/lession_es5/lession9';
 // import lottery from './lottery'

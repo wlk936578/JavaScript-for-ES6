@@ -56,6 +56,9 @@
         this.age = args[1];
         console.log('this is addStyleMixin', ...args);
       }
+      static show() {
+        console.log('show color');
+      }
       addStyle() {
         console.log('red color');
       }
@@ -112,7 +115,7 @@
   console.log(obj instanceof MixinFoo); // true
   console.log(obj instanceof calMixin); // false
   console.log(obj instanceof addStyleMixin); // false
-  // 此处是因为箭头函数没有显示原型，所以mixin和mixin子类之前无法证明继承关系
+  // 此处是因为箭头函数没有显示原型，所以mixin 和 mixin子类之前无法证明继承关系
 
   // 修正mixin的原型
   // calMixin.prototype = Object.create({}); //需要继承自Object，这里如果写null的话，instanceof Object会是false

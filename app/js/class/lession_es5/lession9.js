@@ -133,4 +133,26 @@
 
 // 进一步优化
 {
+  Object.defineProperty(Array.prototype, 'mapFn', {
+    value: function(fn) {
+      const array = this;
+      const newArray = [];
+      let i = 0;
+      let len = array.length;
+      for (; i < len; i++) {
+        newArray.push(fn(array[i])); // 此处的this指向的是 strArray,即 Array的 实例对象
+      }
+      return newArray;
+    },
+    enumerable: false // 此处设置枚举属性为false,这样用for...in循环时不会被暴露出来
+  });
+
+  let strArray = ['JavaScript', 'Python', 'PHP', 'Java', 'C'];
+  const mapArray = strArray.mapFn(item => {
+    return item;
+  });
+  console.log('原型上扩展的自定义map方法', mapArray);
+  for (const item in [11, 33, 55]) {
+    console.log(item);
+  }
 }
